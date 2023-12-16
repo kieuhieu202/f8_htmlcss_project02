@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -11,6 +15,69 @@ body {
   font-size: 1.6rem;
 }
 
-p {
-  font-size: 2.4rem;
+/* Common */
+.btn {
+  background: #171100;
+  width: 144px;
+  border-radius: 24.5px;
+  text-align: center;
+  padding: 17px 12px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  padding: 0 24px;
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* Header */
+.header-fixed {
+  position: sticky;
+  top: -24px;
+  background: #fffcf4;
+}
+.header-fixed .nav {
+  display: flex;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 12px;
+}
+
+.header-fixed .nav .list {
+  display: flex;
+  gap: 42px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+.header-fixed .item a {
+  position: relative;
+  padding: 12px 0;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: text-shadow 0.3s ease;
+}
+
+.header-fixed .item a:hover {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-fixed .item:hover a::after {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
 }
