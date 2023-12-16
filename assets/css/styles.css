@@ -16,6 +16,12 @@ body {
 }
 
 /* Common */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .btn {
   display: inline-block;
   background: #171100;
@@ -225,4 +231,159 @@ a {
   color: #5f5b53;
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+/* Courses */
+.courses {
+  margin: 200px 0;
+}
+.courses .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses .row .column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.courses .row .column-right {
+  display: flex;
+  gap: 18px;
+}
+
+.courses .row .title {
+  color: #171100;
+  font-family: "Sen", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: -0.76px;
+}
+
+.courses .row .desc {
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+.courses .list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.courses .list .item {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.courses .item .thumbnail {
+  display: block;
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.courses .item .body {
+  padding: 22px;
+}
+
+.courses .item .sub-title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.courses .rating {
+  display: flex;
+  gap: 6px;
+}
+.courses .rating span {
+  margin-top: 2px;
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.courses .item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.courses .item .row-bottom {
+  margin-top: 12px;
+}
+
+.courses .item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.courses .item .btn {
+  min-width: 118px;
+  font-size: 1.4rem;
+}
+
+/* Review */
+.review {
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.review .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.review .profile .name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: "Sen", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.review .profile .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.review .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-desc p {
+  width: 740px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54;
+}
+
+.review-desc img {
+  position: relative;
+  left: -30px;
+}
+.review .profile .dots-block {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+.review .profile .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 50%;
 }
