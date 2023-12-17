@@ -508,7 +508,7 @@ a {
 }
 .blog-list .thumbnail {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 16px 16px 0px 0px;
@@ -557,4 +557,98 @@ a {
 .blog .dots-block {
   margin-top: 38px;
   justify-content: center;
+}
+
+/* Footer */
+.footer {
+  padding: 96px 0 28px;
+  background: #2e2100;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+.footer .row-left .desc {
+  width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.footer .row-left .social-block {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .row-right {
+  display: flex;
+  gap: 130px;
+}
+
+.footer .row-right .heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list .item {
+  margin-top: 12px;
+}
+.footer .list a {
+  white-space: nowrap;
+}
+.footer .row-right a {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+.footer .row-right a:hover {
+  opacity: 0.8;
+}
+.footer .contact-info {
+  width: 231px;
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-direction: column;
+}
+
+.footer .contact-info span {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer .row-right .saparate {
+  margin-top: 14px;
+  width: 130px;
+  height: 1px;
+  background: #59554b;
+}
+
+.footer .saparate {
+  margin-top: 38px;
+  width: 100%;
+  height: 1px;
+  background: #59554b;
+}
+
+.footer .copyright {
+  margin-top: 28px;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
