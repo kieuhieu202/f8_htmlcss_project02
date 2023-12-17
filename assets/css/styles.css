@@ -16,6 +16,16 @@ body {
 }
 
 /* Common */
+.dots-block {
+  display: flex;
+  gap: 6px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 50%;
+}
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: var(--line-clamp, 2);
@@ -381,12 +391,6 @@ a {
   display: flex;
   gap: 6px;
 }
-.review .profile .dot {
-  width: 6px;
-  height: 6px;
-  background-color: #634700;
-  border-radius: 50%;
-}
 
 /* Stats */
 .stats {
@@ -459,4 +463,98 @@ a {
   width: 470px;
   height: 440px;
   border-radius: 20px;
+}
+
+/* Blog */
+.blog {
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blog-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-top .title {
+  color: #130606;
+  font-family: "Sen", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.blog-top .desc {
+  margin-top: 16px;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.blog-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.blog-list .item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.blog-list .thumbnail {
+  display: block;
+  width: 370px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.blog-list .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 20px 28px;
+}
+
+.blog-list .body .date {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.blog-list .body .sub-title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.blog-list .body .btn {
+  min-width: 118px;
+  font-size: 1.4rem;
+}
+
+.blog-list .body .saparate {
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blog-list .body-head {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.blog .dots-block {
+  margin-top: 38px;
+  justify-content: center;
 }
