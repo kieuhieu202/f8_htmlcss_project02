@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --primary-color: #ffb900;
+  --font-heading: "Sen", sans-serif;
+}
 html,
 body {
   scroll-behavior: smooth;
@@ -16,6 +19,7 @@ body {
 }
 
 /* Common */
+
 .dots-block {
   display: flex;
   gap: 6px;
@@ -36,7 +40,7 @@ body {
   display: inline-block;
   background: #171100;
   min-width: 144px;
-  border-radius: 24.5px;
+  border-radius: 999px;
   text-align: center;
   padding: 17px 12px;
   color: #fff;
@@ -44,7 +48,7 @@ body {
   font-weight: 600;
 }
 .btn:hover {
-  background: #ffb900;
+  background: var(--primary-color);
 }
 a {
   text-decoration: none;
@@ -86,7 +90,7 @@ a {
 }
 
 .header-fixed .item a:hover {
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 2px currentColor;
 }
 
 .header-fixed .item:hover a::after {
@@ -141,6 +145,14 @@ a {
   align-items: center;
   gap: 16px;
 }
+.header-body .list-courses .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
 
 .header-body .list-courses .qty-course {
   color: #5f5b53;
@@ -167,7 +179,7 @@ a {
 
 .header-body .info .heading {
   color: #171100;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 5.8rem;
   font-weight: 700;
   line-height: 1.17;
@@ -191,7 +203,6 @@ a {
 .header-body .ctn-block .btn {
   min-width: 180px;
   padding: 24px 12px;
-  border-radius: 32px;
   font-size: 1.8rem;
 }
 
@@ -234,7 +245,7 @@ a {
 
 .header-body .qty-item .qty {
   color: #171100;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 4.4rem;
   font-weight: 700;
 }
@@ -267,7 +278,7 @@ a {
 
 .courses .row .title {
   color: #171100;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: -0.76px;
@@ -358,7 +369,7 @@ a {
 .review .profile .name {
   margin-top: 18px;
   color: #f7f7f7;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -426,7 +437,7 @@ a {
 
 .stats .info .title {
   color: #171100;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 3.8rem;
   font-weight: 700;
   line-height: 1.26;
@@ -444,8 +455,7 @@ a {
 .stats .btn {
   min-width: 137px;
   margin-top: 32px;
-  border-radius: 26px;
-  background: #ffb900;
+  background: var(--primary-color);
 }
 
 .stats .btn:hover {
@@ -483,7 +493,7 @@ a {
 
 .blog-top .title {
   color: #130606;
-  font-family: "Sen", sans-serif;
+  font-family: var(--font-heading);
   font-size: 3.8rem;
   font-weight: 700;
   line-height: 1.26;
