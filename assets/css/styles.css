@@ -196,6 +196,9 @@ a {
 }
 
 .header-body .ctn-block .ctn-video {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #171100;
